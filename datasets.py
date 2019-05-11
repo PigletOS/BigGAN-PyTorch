@@ -40,6 +40,7 @@ def find_classes(dir):
 def make_dataset(dir, class_to_idx):
   images = []
   dir = os.path.expanduser(dir)
+  print('data path is : 'dir)
   for target in tqdm(sorted(os.listdir(dir))):
     d = os.path.join(dir, target)
     if not os.path.isdir(d):
