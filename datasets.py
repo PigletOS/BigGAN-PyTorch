@@ -45,7 +45,7 @@ def make_dataset(dir, class_to_idx):
     d = os.path.join(dir, target)
     if not os.path.isdir(d):
       continue
-
+    raise RuntimeError('root is :'dir)
     for root, _, fnames in sorted(os.walk(d)):
       for fname in sorted(fnames):
         if is_image_file(fname):
