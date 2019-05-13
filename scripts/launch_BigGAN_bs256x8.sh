@@ -1,7 +1,7 @@
 #!/bin/bash
 python train.py 
---dataset I128_hdf5 --parallel --shuffle  --num_workers 4 --batch_size 24 --load_in_mem  
---num_G_accumulations 8 --num_D_accumulations 8 
+--dataset I128_hdf5 --parallel --shuffle  --num_workers 2 --batch_size 10 --load_in_mem  
+--num_G_accumulations 12 --num_D_accumulations 12 
 --num_D_steps 1 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 
 --G_attn 64 --D_attn 64 
 --G_nl inplace_relu --D_nl inplace_relu 
