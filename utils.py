@@ -184,7 +184,7 @@ def prepare_parser():
     '--split_D', action='store_true', default=False,
     help='Run D twice rather than concatenating inputs? (default: %(default)s)')
   parser.add_argument(
-    '--num_epochs', type=int, default=100,
+    '--num_epochs', type=int, default=30,
     help='Number of epochs to train for (default: %(default)s)')
   parser.add_argument(
     '--parallel', action='store_true', default=False,
