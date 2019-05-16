@@ -217,7 +217,7 @@ def prepare_parser():
     help='Run G in eval mode (running/standing stats?) at sample/test time? '
          '(default: %(default)s)')
   parser.add_argument(
-    '--save_every', type=int, default=2000,
+    '--save_every', type=int, default=5,
     help='Save every X iterations (default: %(default)s)')
   parser.add_argument(
     '--num_save_copies', type=int, default=2,
@@ -233,7 +233,7 @@ def prepare_parser():
     '--no_fid', action='store_true', default=False,
     help='Calculate IS only, not FID? (default: %(default)s)')
   parser.add_argument(
-    '--test_every', type=int, default=5000,
+    '--test_every', type=int, default=10,
     help='Test every X iterations (default: %(default)s)')
   parser.add_argument(
     '--num_inception_images', type=int, default=50000,
